@@ -1,0 +1,71 @@
+AI LABORATORY MINI PROJECT
+
+TITLE:
+AI-Based Route Finding System Using A* Search Algorithm
+
+AIM:
+To develop an intelligent route-finding system that calculates a low-cost route between two locations using A* Search.
+
+OBJECTIVES:
+1. Understand state-space search.
+2. Implement A* Search using Python.
+3. Use heuristic information to guide search.
+4. Develop a web dashboard using Flask.
+5. Display route cost and search steps.
+
+TECHNOLOGIES:
+Python, Flask, HTML, CSS, JavaScript.
+
+AI ALGORITHM:
+A* Search.
+
+FORMULA:
+f(n) = g(n) + h(n)
+
+g(n) = actual cost from the start node.
+h(n) = estimated cost from the current node to the goal.
+f(n) = estimated total cost.
+
+WORKING:
+The user selects a source and destination. The browser sends the request to Flask. The A* algorithm maintains an open list, calculates route costs, expands promising nodes, and reconstructs the path when the destination is reached. The result is returned to the dashboard.
+
+ALGORITHM:
+1. Start.
+2. Read source and destination.
+3. Add source to the open list.
+4. Calculate f(n) = g(n) + h(n).
+5. Select the node with minimum f(n).
+6. Expand neighboring nodes.
+7. Update their costs and parent nodes.
+8. Repeat until the goal is reached.
+9. Trace parent nodes to obtain the route.
+10. Display route and total cost.
+11. Stop.
+
+SAMPLE:
+Source: College
+Destination: Airport
+Possible route: College → Library → Market → Park → Airport
+Cost: 16 units.
+
+ADVANTAGES:
+- Uses heuristic knowledge.
+- Suitable for route-finding demonstrations.
+- Provides an interactive interface.
+- Easy to extend.
+
+LIMITATIONS:
+- Uses a predefined demonstration graph.
+- Costs are sample values.
+- No live GPS, traffic or online map data.
+
+FUTURE ENHANCEMENTS:
+- OpenStreetMap integration.
+- GPS support.
+- Traffic-aware routing.
+- Interactive map visualization.
+- Database-backed history.
+- Comparison of A*, BFS and Dijkstra.
+
+RESULT:
+Thus, the AI-Based Route Finding System was successfully developed using Flask and the A* Search Algorithm. The dashboard accepts source and destination locations and displays a calculated route with its cost.
